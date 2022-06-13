@@ -13,15 +13,15 @@
 - Complete tree view of dev directory: [tree.txt](tree.txt)
 
 ## Assessment ipynb notebook
-[exam_paper.ipynb](exam_paper.ipynb)
+- [exam_paper.ipynb](exam_paper.ipynb)
 
 ## Virtual environment
-./venv/Scripts/python.exe
+- ./venv/Scripts/python.exe
 
 ## Database
 ![Bigquery](readme_bigquery.png)
 
-## Data ingestion
+## Data flow
 ```mermaid
 graph TD
     A[Jupyter notebook] --> B1(Bigquery API)
@@ -39,4 +39,15 @@ graph TD
     G1 -->|Python triggers transfer| H1[Data transferred from cloud storage bucket to bigquery table]
     H1 -->|Data studio data connection| I1[Data studio dashboard]
 ```
-  
+
+## Data staging
+![Cloud Storage](readme_cloud_storage.png)
+
+## Data ingestion
+![Biquery Transfer](readme_bq_transfer.png)
+ 
+## Dashboard
+[https://datastudio.google.com/reporting/42d8a887-8cf9-43be-ae55-5b086e253327](https://datastudio.google.com/reporting/42d8a887-8cf9-43be-ae55-5b086e253327)
+
+## API auhtentication
+[OAuth 2.0 service account](https://developers.google.com/identity/protocols/oauth2/service-account)
