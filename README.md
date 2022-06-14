@@ -6,7 +6,7 @@
 ## Dev environment
 - Location: local pc i.e. local installation of Python
 - OS: Windows 11 (21H2)
-- Python verion: 3.10.4 (non-conda)
+- Python version: 3.10.4 (non-conda)
 - Git version: 2.36.1.windows.1
 - IDE: VS code
 - Packages: [requirements.txt](requirements.txt)
@@ -35,7 +35,7 @@ graph TD
     B1 --> C1{Table exists?}
     C1 -->|Yes| D1[Delete table]
     C1 -->|No| E1[Create table] --> F1[Bigquery tranfer]
-    F1 --> G1[Create tranfer config]
+    F1 --> G1[Create transfer config]
     G1 -->|Python triggers transfer| H1[Data transferred from cloud storage bucket to bigquery table]
     H1 -->|Data studio data connection| I1[Data studio dashboard]
 ```
